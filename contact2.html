@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+     <head>
+
+	
+	      <script type="text/javascript" src="js/modernizr.js"></script>
+          <meta charset="utf-8" />	 
+		  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://dev.jquery.com/view/trunk/plugins/validate/jquery.validate.js"></script> 
+
+	      <title>Food Intro</title>
+		  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans|Alegreya+SC' rel='stylesheet' type='text/css'>
+		  <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+		  <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+		  <link href='http://fonts.googleapis.com/css?family=New+Rocker' rel='stylesheet' type='text/css'>
+		  <link href='http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer' rel='stylesheet' type='text/css'>
+		  <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Mouse+Memoirs' rel='stylesheet' type='text/css'>
+		  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+          <link media="only screen and (max-width: 980px)" rel="stylesheet" type="text/css" href="css/tablet.css"  />
+		  <link media="only screen and (max-width: 700px)" rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+		    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	 		
+	<style>
+	/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 800px; /* Full width */
+    padding: 15px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 6px; /* Rounded borders */
+    box-sizing: border-box; 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: tan;
+    padding: 20px;
+	padding-left: 80px;
+}
+
+.error { 
+    display: block; 
+    color: red; 
+    font-style: italic; 
+} 
+#message { 
+    display:none; 
+    font-size:15px; 
+    font-weight:bold; 
+    color:#333333; 
+} 
+	</style>
+	 
+	 </head>
+	 
+	 <body>
+	 
+	 	
+	     <div class="header-container">
+		      <header>
+			       <div class="logo"><a href="#">
+				  <img src="images/logo.jpg" alt="Main logo" />	  
+				   </div><!-- /logo  -->
+				   <nav>
+
+						<ul>
+							<li class="about"><a href="#">About</a></li>
+							<li class="syracuse"><a href="#">Syracuse</a></li>
+							<li class="others"><a href="#">Others</a></li>
+							<li class="contact"><a href="#">Contact Us</a></li>
+							
+						</ul>
+
+				   </nav>
+		
+				    <!-- <div class="cuselogo">
+						<img src="images/Syracuse_Logo.jpg" alt="Syracuse Logo" />
+				   </div>
+				-->
+				   <div class="fix"></div><!-- prevent collapse -->
+			  </header>
+		 </div><!--  /header container -->
+		
+		<div class="container">
+  <div class="jumbotron">
+    <h1>Contact Us</h1>      
+	<br/>
+	<br/>
+
+<form name="contactform" method="post" action="contact_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
+</form>
+	
+	
+  </div> 
+</div>
+		
+		 </body>
+		 
+	
+		 
+		 <footer>
+		<div class="footer">
+		<h3 style="text-align: center;">&copy; Copyright 2017, Syracuse Food Intro</h3>
+		</div>
+		</footer>
+		
+		
+		
+			
+		 
+		 <script type="text/javascript" src="js/jquery.js"></script>
+		 <script type="text/javascript" src="js/custom.js"></script>
+		
+		 
+</html>
+</html>
+			
